@@ -21,7 +21,7 @@ BuildRequires:	python-distribute
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
 Requires:	python-modules
-Requires:	pythonegg(peppercorn) >= 0.3
+Requires:	python-peppercorn >= 0.3
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -69,7 +69,7 @@ rmdir $RPM_BUILD_ROOT%{py_sitescriptdir}/%{module}/locale
 # TODO: patch that the symlink won't be needed
 ln -s %{_localedir} $RPM_BUILD_ROOT%{py_sitescriptdir}/%{module}/locale
 
-mv $RPM_BUILD_ROOT/usr/share/locale/{de_DE,de}
+mv $RPM_BUILD_ROOT%{_localedir}/{de_DE,de}
 
 %find_lang %{module}
 
