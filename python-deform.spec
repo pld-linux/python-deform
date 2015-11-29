@@ -19,7 +19,7 @@ Source0:	http://pypi.python.org/packages/source/d/deform/%{module}-%{version}.ta
 URL:		http://docs.pylonsproject.org/projects/deform/
 BuildRequires:	python-distribute
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 Requires:	python-modules
 Requires:	python-peppercorn >= 0.3
 BuildArch:	noarch
