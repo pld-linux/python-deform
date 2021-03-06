@@ -10,7 +10,7 @@
 Summary:	Python HTML form generation library
 Name:		python-%{module}
 Version:	0.9.6
-Release:	2
+Release:	3
 # Some CSS and code (in the static directory) is provided via a Creative Commons license.  (see LICENSE.txt)
 License:	BSD-derived (http://www.repoze.org/LICENSE.txt), CC BY 3.0 (assets)
 Group:		Libraries/Python
